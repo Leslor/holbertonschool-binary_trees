@@ -19,5 +19,5 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 			return  (parent->right);
 		return (parent->left);
 	}
-	return (parent->left);
+	return (NULL);
 }
