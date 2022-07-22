@@ -8,11 +8,11 @@
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-	binary_tree_t *parent = node->parent;
+	binary_tree_t *parent = NULL;
 
 	if (!node || !parent)
 		return (NULL);
-	/*The hight of left and right*/
+	parent = node->parent;
 	if (parent->left && parent->right)
 	{
 		if (parent->left == node)
